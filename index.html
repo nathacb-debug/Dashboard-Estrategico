@@ -9,4 +9,140 @@
     <h1 style="color:red;">¡Hola Mundo!</h1>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Estratégico</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/tables.css">
+    <link rel="stylesheet" href="css/charts.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <h2>📊 Estrategia Pro</h2>
+        </div>
+
+        <nav class="menu">
+
+            <a href="#" class="menu-item active" data-page="dashboard">
+                🏠 Inicio
+            </a>
+
+            <p class="menu-title">Diagnóstico</p>
+
+            <a href="#" class="menu-item" data-page="pestel">PESTEL</a>
+            <a href="#" class="menu-item" data-page="porter">Porter</a>
+            <a href="#" class="menu-item" data-page="cadena">Cadena de Valor</a>
+
+            <p class="menu-title">Matrices</p>
+
+            <a href="#" class="menu-item" data-page="efi">EFI</a>
+            <a href="#" class="menu-item" data-page="efe">EFE</a>
+            <a href="#" class="menu-item" data-page="foda">FODA</a>
+            <a href="#" class="menu-item" data-page="foda-cruzado">FODA Cruzado</a>
+
+            <p class="menu-title">Estrategia</p>
+
+            <a href="#" class="menu-item" data-page="peyea">PEYEA</a>
+            <a href="#" class="menu-item" data-page="bcg">BCG</a>
+            <a href="#" class="menu-item" data-page="mckinsey">McKinsey</a>
+            <a href="#" class="menu-item" data-page="gran-estrategia">Gran Estrategia</a>
+
+            <p class="menu-title">Final</p>
+
+            <a href="#" class="menu-item" data-page="qspm">
+                ⭐ Matriz Cuantitativa
+            </a>
+
+            <a href="#" class="menu-item" data-page="kpis">KPIs</a>
+            <a href="#" class="menu-item" data-page="reportes">Reportes</a>
+
+        </nav>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="breadcrumbs">
+                <span>Inicio</span> / <span>Dashboard Ejecutivo</span>
+            </div>
+
+            <div class="topbar-actions">
+                <button id="btnDarkMode">🌙</button>
+                <button id="btnSave">💾 Guardar</button>
+            </div>
+
+        </header>
+
+        <!-- CONTENT DINÁMICO -->
+        <section id="content" class="content">
+
+            <!-- DASHBOARD INICIAL -->
+            <div class="dashboard-grid">
+
+                <!-- KPI CARDS -->
+                <div class="card kpi">
+                    <h3>Estrategia Recomendada</h3>
+                    <p id="strategicResult">No calculada</p>
+                </div>
+
+                <div class="card kpi">
+                    <h3>Estado Estratégico</h3>
+                    <p class="status warning">En análisis</p>
+                </div>
+
+                <div class="card kpi">
+                    <h3>Progreso del Proyecto</h3>
+                    <p>0%</p>
+                </div>
+
+            </div>
+
+            <!-- GRÁFICOS -->
+            <div class="charts-grid">
+
+                <div class="card">
+                    <h3>Resumen Estratégico</h3>
+                    <canvas id="chartStrategy"></canvas>
+                </div>
+
+                <div class="card">
+                    <h3>Indicadores Clave</h3>
+                    <canvas id="chartKpis"></canvas>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="js/storage.js"></script>
+<script src="js/app.js"></script>
+<script src="js/charts.js"></script>
+
+</body>
 </html>
