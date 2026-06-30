@@ -1,0 +1,103 @@
+/* ==========================================================
+   DASHBOARD ESTRATÉGICO
+   Variables Globales
+========================================================== */
+
+:root{
+
+    /* ========= PALETA PRINCIPAL ========= */
+
+    --color-primary:#8B6B61;
+    --color-primary-light:#B89B92;
+
+    --color-secondary:#D8C3A5;
+
+    --color-accent:#EBCDCB;
+
+    --color-background:#F8F6F3;
+
+    --color-surface:#FFFFFF;
+
+    --color-border:#E6E1DC;
+
+    --color-text:#2F2F2F;
+
+    --color-text-light:#6B6B6B;
+
+    /* ========= COLORES DE ESTADO ========= */
+
+    --success:#67C587;
+
+    --warning:#F4B860;
+
+    --danger:#E57373;
+
+    --info:#64B5F6;
+
+    /* ========= SOMBRAS ========= */
+
+    --shadow-sm:
+        0 2px 8px rgba(0,0,0,.05);
+
+    --shadow-md:
+        0 8px 24px rgba(0,0,0,.08);
+
+    --shadow-lg:
+        0 12px 35px rgba(0,0,0,.12);
+
+    /* ========= BORDES ========= */
+
+    --radius-sm:8px;
+
+    --radius-md:14px;
+
+    --radius-lg:20px;
+
+    --radius-xl:30px;
+
+    /* ========= ESPACIADOS ========= */
+
+    --space-xs:4px;
+
+    --space-sm:8px;
+
+    --space-md:16px;
+
+    --space-lg:24px;
+
+    --space-xl:32px;
+
+    --space-xxl:48px;
+
+    /* ========= SIDEBAR ========= */
+
+    --sidebar-width:270px;
+
+    --header-height:75px;
+
+    /* ========= TRANSICIONES ========= */
+
+    --transition:.30s ease;
+
+    /* ========= TIPOGRAFÍA ========= */
+
+    --font-family:
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+
+    --font-xs:.75rem;
+
+    --font-sm:.90rem;
+
+    --font-md:1rem;
+
+    --font-lg:1.2rem;
+
+    --font-xl:1.5rem;
+
+    --font-xxl:2rem;
+
+}
